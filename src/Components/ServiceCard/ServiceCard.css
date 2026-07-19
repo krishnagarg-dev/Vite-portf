@@ -1,0 +1,34 @@
+.services-section {
+  padding: 3rem 1rem;
+  background: #0F0F0F;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.services-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.services-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.service-card {
+  background-color: #1A1A1A;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 6px 16px rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #2A2A2A;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px #f70072; /* soft orange glow */
+}
