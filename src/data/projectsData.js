@@ -2,10 +2,10 @@ const projects = [
   {
     id: 1,
     featured: true,
-    title: "LK Enterprises",
-    subtitle: "Full Stack MERN E-Commerce Platform",
+    title: "L K Enterprises",
+    subtitle: "Full Stack MERN Sanitary & Bathware E-Commerce Platform",
     description:
-      "A complete wholesale & retail business platform featuring an admin dashboard, JWT authentication, product management, categories, brands, WhatsApp inquiries, and responsive design.",
+      "A modern wholesale and retail sanitary & bathware platform featuring secure JWT authentication, admin dashboard, product, category and brand management, responsive UI, and seamless WhatsApp inquiry integration.",
 
     image: "/projects/lk-enterprises.png",
 
@@ -18,17 +18,17 @@ const projects = [
       "Tailwind CSS",
     ],
 
-    github: "#",
-    live: "#",
+    github: "https://github.com/krishnagarg-dev/lk-ent",
+    live: "https://lk-ent.vercel.app",
   },
 
   {
     id: 2,
     featured: false,
     title: "FitPulse",
-    subtitle: "AI-Powered Fitness Tracking Platform",
+    subtitle: "AI Fitness Assistant & Workout Platform",
     description:
-      "A MERN fitness application to track workouts, nutrition, progress, fitness goals, and body metrics through an interactive dashboard.",
+      "An AI-powered MERN fitness platform where users can create accounts, follow personalized workout plans, track nutrition, monitor progress, and receive virtual fitness guidance through an interactive dashboard.",
 
     image: "/projects/fitpulse.png",
 
@@ -50,7 +50,7 @@ const projects = [
     title: "Food Delivery",
     subtitle: "Full Stack MERN Food Ordering App",
     description:
-      "Modern food ordering platform with authentication, cart management, order tracking, and responsive UI.",
+      "A modern food ordering platform with secure authentication, restaurant listings, shopping cart, order management, and a fully responsive user experience.",
 
     image: "/projects/food-delivery.png",
 
@@ -71,7 +71,7 @@ const projects = [
     title: "Inventory Management REST API",
     subtitle: "Node.js REST API",
     description:
-      "RESTful backend API supporting CRUD operations, filtering, pagination, validation, and clean API architecture.",
+      "A RESTful backend API built with Node.js and Express supporting CRUD operations, filtering, pagination, validation, and clean API architecture for inventory management.",
 
     image: "/projects/inventory-api.png",
 
