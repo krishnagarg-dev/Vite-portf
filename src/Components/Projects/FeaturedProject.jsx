@@ -10,19 +10,23 @@ export default function FeaturedProject({ project }) {
       transition={{ duration: 0.7 }}
       className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl"
     >
-      <div className="grid items-center gap-10 lg:grid-cols-2">
+      <div className="grid items-stretch lg:grid-cols-[1.15fr_0.85fr]">
         {/* Image */}
-        <div className="overflow-hidden">
+        <div className="relative overflow-hidden bg-[#0f172a]">
           <img
             src={project.image}
             alt={project.title}
-            className="h-full w-full object-cover transition duration-700 hover:scale-105"
+            loading="lazy"
+            className="h-[520px] w-full object-cover object-top transition-transform duration-700 hover:scale-105"
           />
+
+          {/* Gradient Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-[#0b1120]/10" />
         </div>
 
         {/* Content */}
-        <div className="p-8 lg:p-12">
-          <span className="rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-1 text-sm text-cyan-300">
+        <div className="flex flex-col justify-center p-8 lg:p-12">
+          <span className="w-fit rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-1 text-sm font-medium text-cyan-300">
             Featured Project
           </span>
 
@@ -30,7 +34,7 @@ export default function FeaturedProject({ project }) {
             {project.title}
           </h2>
 
-          <p className="mt-2 text-cyan-300">
+          <p className="mt-3 text-lg font-medium text-cyan-300">
             {project.subtitle}
           </p>
 
@@ -42,19 +46,19 @@ export default function FeaturedProject({ project }) {
             {project.technologies.map((tech) => (
               <span
                 key={tech}
-                className="rounded-full border border-white/10 bg-slate-800 px-4 py-2 text-sm text-slate-200"
+                className="rounded-full border border-white/10 bg-slate-800/80 px-4 py-2 text-sm text-slate-200"
               >
                 {tech}
               </span>
             ))}
           </div>
 
-          <div className="mt-10 flex gap-4">
+          <div className="mt-10 flex flex-wrap gap-4">
             <a
               href={project.live}
               target="_blank"
-              rel="noreferrer"
-              className="flex items-center gap-2 rounded-xl bg-cyan-400 px-6 py-3 font-semibold text-slate-950 transition hover:scale-105"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 rounded-xl bg-cyan-400 px-6 py-3 font-semibold text-slate-950 transition-all duration-300 hover:scale-105 hover:bg-cyan-300"
             >
               Live Demo
               <FiArrowUpRight />
@@ -63,8 +67,8 @@ export default function FeaturedProject({ project }) {
             <a
               href={project.github}
               target="_blank"
-              rel="noreferrer"
-              className="flex items-center gap-2 rounded-xl border border-white/10 px-6 py-3 font-semibold text-white transition hover:bg-white/10"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 rounded-xl border border-white/10 px-6 py-3 font-semibold text-white transition-all duration-300 hover:border-cyan-400 hover:bg-white/10"
             >
               GitHub
               <FiGithub />
