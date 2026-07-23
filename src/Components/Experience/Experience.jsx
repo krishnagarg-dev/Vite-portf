@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import experience from "../../data/experienceData";
 import ExperienceCard from "./ExperienceCard";
 
+
 export default function Experience() {
   return (
     <section

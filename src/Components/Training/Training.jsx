@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import training from "../../data/training";
 import ExperienceCard from "../Experience/ExperienceCard";
 
+
 export default function Training() {
   return (
     <section

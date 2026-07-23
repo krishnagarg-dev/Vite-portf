@@ -19,7 +19,6 @@ const training = [
       "Worked on frontend development with HTML, CSS, and JavaScript.",
     ],
   },
-
   {
     type: "Training",
     company: "CETPA Infotech",
