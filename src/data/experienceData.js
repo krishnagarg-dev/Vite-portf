@@ -1,49 +1,84 @@
 const experience = [
   {
-    id: 1,
+    type: "Internship",
     company: "CoreGen Technologies",
-    role: "Full Stack Web Developer Intern",
-    duration: "Jun 2026 - Present",
-    type: "Remote",
-    description:
-      "Developing responsive web applications, REST APIs, and modern full-stack solutions using the MERN stack while collaborating in an agile workflow.",
-    skills: [
-      "React",
+    role: "Full Stack Developer Intern",
+    duration: "Jun 2026 – Present",
+    location: "Remote",
+    technologies: [
+      "React.js",
       "Node.js",
-      "Express",
+      "Express.js",
       "MongoDB",
       "Git",
+      "GitHub",
+    ],
+    description: [
+      "Developing full-stack web applications using the MERN stack.",
+      "Building responsive user interfaces with React.js.",
+      "Creating REST APIs using Node.js and Express.js.",
+      "Working with MongoDB for database management and CRUD operations.",
+      "Collaborating with Git and GitHub in an Agile development workflow.",
     ],
   },
 
   {
-    id: 2,
-    company: "QBE Consulting Pvt. Ltd.",
+    type: "Internship",
+    company: "QBE Consulting Private Limited",
     role: "Full Stack Developer Intern",
-    duration: "Mar 2025 - Aug 2025",
-    type: "Remote",
-    description:
-      "Built and maintained full-stack web applications, worked with React, Flask, Node.js, MongoDB, and collaborated on real-world development tasks.",
-    skills: [
-      "React",
+    duration: "Mar 2025 – Aug 2025",
+    location: "Gurugram, India",
+    technologies: [
+      "React.js",
       "Node.js",
-      "Flask",
+      "Express.js",
       "MongoDB",
+      "Git",
+      "GitHub",
+    ],
+    description: [
+      "Developed full-stack web applications using React.js, Node.js, Express.js, and MongoDB.",
+      "Integrated REST APIs and implemented CRUD operations.",
+      "Designed responsive user interfaces and improved application performance.",
+      "Collaborated with the development team using Git and GitHub.",
     ],
   },
 
   {
-    id: 3,
-    company: "IBM SkillsBuild",
-    role: "Gen AI & Cloud Computing Intern",
-    duration: "2026",
-    type: "Virtual",
-    description:
-      "Completed hands-on learning in Generative AI, cloud technologies, and AI-powered application development through the IBM SkillsBuild internship.",
-    skills: [
-      "Generative AI",
-      "Cloud",
-      "Prompt Engineering",
+    type: "Training",
+    company: "MTA India",
+    role: "Full Stack Development with Python",
+    duration: "6 Months",
+    location: "Noida, India",
+    technologies: [
+      "Python",
+      "Django",
+      "SQLite",
+      "HTML",
+      "CSS",
+      "JavaScript",
+    ],
+    description: [
+      "Completed a 6-month Full Stack Development with Python training.",
+      "Built web applications using Python, Django, and SQLite.",
+      "Worked on frontend development with HTML, CSS, and JavaScript.",
+    ],
+  },
+
+  {
+    type: "Training",
+    company: "CETPA Infotech",
+    role: "AWS Cloud & Networking",
+    duration: "3 Months",
+    location: "Noida, India",
+    technologies: [
+      "AWS Cloud",
+      "Networking",
+      "Cloud Computing",
+    ],
+    description: [
+      "Completed training in AWS Cloud and Computer Networking.",
+      "Learned cloud services, networking fundamentals, and infrastructure concepts.",
     ],
   },
 ];
